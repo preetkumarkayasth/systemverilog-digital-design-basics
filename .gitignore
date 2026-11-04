@@ -1,0 +1,26 @@
+
+# QuestaSim generated files
+work/
+transcript
+vsim.wlf
+*.wlf
+*.vstf
+*.log
+
+# Compiled simulation files
+*.qdb
+*.qpg
+*.qtl
+*.dat
+*.dll
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Operating system files
+Thumbs.db
+.DS_Store
+desktop.ini
