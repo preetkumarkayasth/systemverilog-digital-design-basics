@@ -1,0 +1,29 @@
+PROJECT: 4-bit Ripple Carry Adder Using SystemVerilog
+HDL: SystemVerilog
+SIMULATOR: QuestaSim 10.7c
+
+DESIGN: four_bit_adder.sv
+TESTBENCH: four_bit_adder_tb.sv
+
+------------------------------------------------
+SIMULATION RESULTS
+------------------------------------------------
+
+A       B       Cin | Cout Sum  | Status
+------------------------------------------------
+0000    0000     0  |   0   0000 | PASS
+0101    0011     0  |   0   1000 | PASS
+1111    0001     0  |   1   0000 | PASS
+1111    1111     0  |   1   1110 | PASS
+0101    0011     1  |   0   1001 | PASS
+0111    0001     1  |   0   1001 | PASS
+1010    0101     0  |   0   1111 | PASS
+1111    1111     1  |   1   1111 | PASS
+
+------------------------------------------------
+Total Test Cases: 8
+Passed: 8
+Failed: 0
+
+OVERALL STATUS: PASS
+------------------------------------------------
