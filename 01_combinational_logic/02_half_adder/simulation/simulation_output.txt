@@ -1,0 +1,25 @@
+PROJECT: Half Adder Using SystemVerilog
+HDL: SystemVerilog
+SIMULATOR: QuestaSim 10.7c
+
+TESTBENCH: half_adder_tb.sv
+DESIGN: half_adder.sv
+
+----------------------------------------
+SIMULATION RESULTS
+----------------------------------------
+
+A B | Sum Carry | Status
+--------------------------------
+0 0 |  0    0    | PASS
+0 1 |  1    0    | PASS
+1 0 |  1    0    | PASS
+1 1 |  0    1    | PASS
+
+----------------------------------------
+Total Test Cases: 4
+Passed: 4
+Failed: 0
+
+OVERALL STATUS: PASS
+----------------------------------------
