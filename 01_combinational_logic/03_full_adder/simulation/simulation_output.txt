@@ -1,0 +1,29 @@
+PROJECT: Full Adder Using SystemVerilog
+HDL: SystemVerilog
+SIMULATOR: QuestaSim 10.7c
+
+DESIGN: full_adder.sv
+TESTBENCH: full_adder_tb.sv
+
+----------------------------------------
+SIMULATION RESULTS
+----------------------------------------
+
+A B Cin | Sum Cout | Status
+--------------------------------
+0 0  0  |  0    0   | PASS
+0 0  1  |  1    0   | PASS
+0 1  0  |  1    0   | PASS
+0 1  1  |  0    1   | PASS
+1 0  0  |  1    0   | PASS
+1 0  1  |  0    1   | PASS
+1 1  0  |  0    1   | PASS
+1 1  1  |  1    1   | PASS
+
+----------------------------------------
+Total Test Cases: 8
+Passed: 8
+Failed: 0
+
+OVERALL STATUS: PASS
+----------------------------------------
