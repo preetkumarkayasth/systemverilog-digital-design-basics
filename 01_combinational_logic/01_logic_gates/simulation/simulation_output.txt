@@ -1,0 +1,28 @@
+
+PROJECT: Implementation of 7 Basic Logic Gates
+HDL: SystemVerilog
+SIMULATOR: QuestaSim 10.7c
+
+TESTBENCH: logic_gates_tb.sv
+DESIGN: logic_gates.sv
+
+------------------------------------------------------------
+                    SIMULATION RESULTS
+------------------------------------------------------------
+
+A B | AND OR NOT NAND NOR XOR XNOR
+----------------------------------
+0 0 |  0   0   1    1    1   0    1 | PASS
+0 1 |  0   1   1    1    0   1    0 | PASS
+1 0 |  0   1   0    1    0   1    0 | PASS
+1 1 |  1   1   0    0    0   0    1 | PASS
+
+----------------------------------
+Simulation completed.
+
+Total test cases: 4
+Passed: 4
+Failed: 0
+
+OVERALL STATUS: PASS
+------------------------------------------------------------
