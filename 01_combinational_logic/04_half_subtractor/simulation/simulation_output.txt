@@ -1,0 +1,25 @@
+PROJECT: Half Subtractor Using SystemVerilog
+HDL: SystemVerilog
+SIMULATOR: QuestaSim 10.7c
+
+DESIGN: half_subtractor.sv
+TESTBENCH: half_subtractor_tb.sv
+
+----------------------------------------
+SIMULATION RESULTS
+----------------------------------------
+
+A B | Difference Borrow | Status
+--------------------------------
+0 0 |     0        0    | PASS
+0 1 |     1        1    | PASS
+1 0 |     1        0    | PASS
+1 1 |     0        0    | PASS
+
+----------------------------------------
+Total Test Cases: 4
+Passed: 4
+Failed: 0
+
+OVERALL STATUS: PASS
+----------------------------------------
