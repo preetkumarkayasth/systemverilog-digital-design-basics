@@ -1,0 +1,64 @@
+==================================================
+     4-BIT MAGNITUDE COMPARATOR - SIMULATION REPORT
+==================================================
+
+Project Name : 4-bit Magnitude Comparator
+HDL          : SystemVerilog
+Simulator    : QuestaSim 10.7c
+
+--------------------------------------------------
+DESIGN DESCRIPTION
+--------------------------------------------------
+
+The 4-bit magnitude comparator compares two
+unsigned 4-bit binary numbers A and B.
+
+It determines whether:
+- A is greater than B
+- A is less than B
+- A is equal to B
+
+Inputs:
+- A[3:0]
+- B[3:0]
+
+Outputs:
+- A_GT_B
+- A_LT_B
+- A_EQ_B
+
+--------------------------------------------------
+VERIFICATION METHODOLOGY
+--------------------------------------------------
+
+- Self-checking SystemVerilog testbench
+- Exhaustive testing of all 256 input pairs
+- Independent reference model
+- Case inequality ( !== ) comparison
+- Automatic PASS/FAIL counting
+- Nested-loop based verification
+
+--------------------------------------------------
+SIMULATION RESULTS
+--------------------------------------------------
+
+TOTAL TESTS        : 256
+TOTAL TESTS PASSED : 256
+TOTAL TESTS FAILED : 0
+
+CONDITION COVERAGE:
+A GREATER THAN B  : 120
+A LESS THAN B     : 120
+A EQUAL TO B      : 16
+
+OVERALL RESULT: ALL TESTS PASSED
+
+--------------------------------------------------
+CONCLUSION
+--------------------------------------------------
+
+The 4-bit magnitude comparator was simulated
+successfully. All 256 possible input pairs were
+checked against the expected comparison results.
+
+==================================================
