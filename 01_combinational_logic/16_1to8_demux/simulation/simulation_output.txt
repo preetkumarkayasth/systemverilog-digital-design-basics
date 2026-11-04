@@ -1,0 +1,14 @@
+PROJECT: 1:8 DEMULTIPLEXER
+SIMULATOR: QuestaSim 10.7c
+
+TEST DESCRIPTION:
+Din = 0 tested with all 8 selection combinations
+Din = 1 tested with all 8 selection combinations
+
+TOTAL TEST CASES: 16
+PASSED: [actual pass count]
+FAILED: [actual fail count]
+
+FINAL RESULT: [actual result]
+
+STATUS: Simulation completed successfully.
