@@ -1,0 +1,64 @@
+
+========================================================
+             4:1 MULTIPLEXER SIMULATION REPORT
+========================================================
+
+Project          : 4:1 Multiplexer
+HDL              : SystemVerilog
+Simulator        : QuestaSim-64 10.7c
+Design Module    : mux_4to1
+Testbench Module : mux_4to1_tb
+Design Type      : Combinational Logic
+
+--------------------------------------------------------
+DESIGN SPECIFICATIONS
+--------------------------------------------------------
+
+Data Inputs      : I0, I1, I2, I3
+Select Inputs    : Sel[1:0]
+Output           : Y
+Total Input Bits : 6
+Total Combinations: 64
+
+--------------------------------------------------------
+SELECTION TABLE
+--------------------------------------------------------
+
+Sel[1:0]       Selected Input       Output
+--------------------------------------------
+00             I0                   I0
+01             I1                   I1
+10             I2                   I2
+11             I3                   I3
+
+--------------------------------------------------------
+VERIFICATION METHODOLOGY
+--------------------------------------------------------
+
+The testbench uses exhaustive verification.
+
+All possible combinations of the four data inputs
+and two select inputs are generated.
+
+Number of combinations:
+2^4 x 2^2 = 64
+
+For every combination:
+1. Inputs are applied to the DUT.
+2. The expected output is calculated independently.
+3. The actual output is compared with the expected output.
+4. PASS or FAIL status is displayed.
+
+--------------------------------------------------------
+SIMULATION SUMMARY
+--------------------------------------------------------
+
+Total Test Cases : 64
+Passed           : 64
+Failed           : 0
+
+Overall Result   : ALL TESTS PASSED
+
+========================================================
+END OF SIMULATION REPORT
+========================================================
