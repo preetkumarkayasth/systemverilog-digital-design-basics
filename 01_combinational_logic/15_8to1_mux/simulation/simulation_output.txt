@@ -1,0 +1,20 @@
+PROJECT: 8:1 MULTIPLEXER
+SIMULATOR: QuestaSim 10.7c
+
+TEST DESCRIPTION:
+All-zero pattern
+All-one pattern
+Alternating patterns
+Walking-one patterns
+Walking-zero patterns
+100 randomized data patterns
+
+TOTAL TEST CASES: 960
+PASSED: 960
+FAILED: 0
+
+FINAL RESULT: ALL TESTS PASSED
+
+SIMULATION TIME: 9600 ns
+COMPILATION ERRORS: 0
+COMPILATION WARNINGS: 0
