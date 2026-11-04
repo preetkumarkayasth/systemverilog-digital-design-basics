@@ -1,0 +1,29 @@
+PROJECT: Full Subtractor Using SystemVerilog
+HDL: SystemVerilog
+SIMULATOR: QuestaSim 10.7c
+
+DESIGN: full_subtractor.sv
+TESTBENCH: full_subtractor_tb.sv
+
+----------------------------------------
+SIMULATION RESULTS
+----------------------------------------
+
+A B Bin | Difference Bout | Status
+--------------------------------
+0 0  0  |     0        0   | PASS
+0 0  1  |     1        1   | PASS
+0 1  0  |     1        1   | PASS
+0 1  1  |     0        1   | PASS
+1 0  0  |     1        0   | PASS
+1 0  1  |     0        0   | PASS
+1 1  0  |     0        0   | PASS
+1 1  1  |     1        1   | PASS
+
+----------------------------------------
+Total Test Cases: 8
+Passed: 8
+Failed: 0
+
+OVERALL STATUS: PASS
+----------------------------------------
