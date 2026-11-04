@@ -1,0 +1,36 @@
+==================================================
+              4:16 DECODER
+             SIMULATION REPORT
+==================================================
+
+Project       : 4:16 Decoder
+HDL           : SystemVerilog
+Simulator     : QuestaSim 10.7c
+Testbench     : decoder_4to16_tb.sv
+Design        : decoder_4to16.sv
+
+--------------------------------------------------
+TEST DESCRIPTION
+--------------------------------------------------
+
+All 16 possible input combinations were tested.
+For each input, exactly one corresponding output
+bit must be HIGH.
+
+The testbench checks:
+1. Functional correctness against expected output.
+2. One-hot output condition using $countones().
+
+--------------------------------------------------
+TEST SUMMARY
+--------------------------------------------------
+
+Total Tests : 16
+PASS        : 16
+FAIL        : 0
+
+RESULT      : ALL TESTS PASSED
+
+Simulation Time : 160 ns
+
+==================================================
