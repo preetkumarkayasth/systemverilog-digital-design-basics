@@ -1,0 +1,98 @@
+
+========================================================
+             4-BIT ALU SIMULATION REPORT
+========================================================
+
+Project          : 4-Bit Arithmetic Logic Unit (ALU)
+HDL              : SystemVerilog
+Simulator        : QuestaSim-64 10.7c
+Design Module    : alu_4bit
+Testbench Module : alu_4bit_tb
+Design Type      : Combinational Logic
+
+--------------------------------------------------------
+SUPPORTED OPERATIONS
+--------------------------------------------------------
+
+Opcode     Operation
+000        ADD
+001        SUB
+010        AND
+011        OR
+100        XOR
+101        NOT
+110        NAND
+111        NOR
+
+--------------------------------------------------------
+TEST CASES
+--------------------------------------------------------
+
+Test 1 : ADD
+A=0101, B=0011
+Expected Result=1000, Carry=0, Zero=0
+Status: PASS
+
+Test 2 : ADD with Carry
+A=1111, B=0001
+Expected Result=0000, Carry=1, Zero=1
+Status: PASS
+
+Test 3 : SUB
+A=1000, B=0011
+Expected Result=0101, Carry=0, Zero=0
+Status: PASS
+
+Test 4 : SUB with Borrow
+A=0011, B=1000
+Expected Result=1011, Carry=1, Zero=0
+Status: PASS
+
+Test 5 : AND
+A=1100, B=1010
+Expected Result=1000, Carry=0, Zero=0
+Status: PASS
+
+Test 6 : OR
+A=1100, B=1010
+Expected Result=1110, Carry=0, Zero=0
+Status: PASS
+
+Test 7 : XOR
+A=1100, B=1010
+Expected Result=0110, Carry=0, Zero=0
+Status: PASS
+
+Test 8 : NOT
+A=1010
+Expected Result=0101, Carry=0, Zero=0
+Status: PASS
+
+Test 9 : NAND
+A=1100, B=1010
+Expected Result=0111, Carry=0, Zero=0
+Status: PASS
+
+Test 10 : NOR
+A=1100, B=1010
+Expected Result=0001, Carry=0, Zero=0
+Status: PASS
+
+Test 11 : Zero Flag Verification
+A=1010, B=1010
+Expected Result=0000, Carry=0, Zero=1
+Status: PASS
+
+--------------------------------------------------------
+SIMULATION SUMMARY
+--------------------------------------------------------
+
+Total Test Cases : 11
+Passed           : 11
+Failed           : 0
+
+Overall Result   : ALL TESTS PASSED
+
+========================================================
+END OF REPORT
+========================================================
