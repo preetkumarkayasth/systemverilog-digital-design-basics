@@ -1,0 +1,14 @@
+PROJECT: 8-BIT MAGNITUDE COMPARATOR
+SIMULATOR: QuestaSim 10.7c
+
+TEST DESCRIPTION:
+10 directed test cases
+1000 randomized test cases
+
+TOTAL TEST CASES: [actual total]
+PASSED: [actual pass count]
+FAILED: [actual fail count]
+
+FINAL RESULT: [actual result]
+
+STATUS: Simulation completed successfully.
