@@ -1,0 +1,62 @@
+==================================================
+          4:2 ENCODER - SIMULATION REPORT
+==================================================
+
+Project Name : 4:2 Binary Encoder
+HDL          : SystemVerilog
+Simulator    : QuestaSim 10.7c
+
+--------------------------------------------------
+DESIGN DESCRIPTION
+--------------------------------------------------
+
+The 4:2 Encoder converts one of four active input
+lines into a 2-bit binary output.
+
+An additional Valid output indicates whether
+exactly one input is HIGH.
+
+Inputs:
+- D0
+- D1
+- D2
+- D3
+
+Outputs:
+- Y1
+- Y0
+- Valid
+
+--------------------------------------------------
+VERIFICATION METHODOLOGY
+--------------------------------------------------
+
+- Self-checking SystemVerilog testbench
+- Exhaustive testing of all 16 input combinations
+- Independent reference model
+- Case inequality ( !== ) comparison
+- Automatic PASS/FAIL counting
+- Invalid input pattern checking
+
+--------------------------------------------------
+SIMULATION RESULTS
+--------------------------------------------------
+
+TOTAL TESTS        : 16
+TOTAL TESTS PASSED : 16
+TOTAL TESTS FAILED : 0
+
+OVERALL RESULT: ALL TESTS PASSED
+
+--------------------------------------------------
+CONCLUSION
+--------------------------------------------------
+
+The 4:2 Encoder was simulated successfully.
+All 16 input combinations were verified.
+
+Valid is asserted only when exactly one input
+is HIGH. Zero-active and multiple-active input
+patterns are treated as invalid.
+
+==================================================
