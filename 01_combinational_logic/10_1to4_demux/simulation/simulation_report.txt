@@ -1,0 +1,55 @@
+==================================================
+       1:4 DEMULTIPLEXER - SIMULATION REPORT
+==================================================
+
+Project Name : 1:4 Demultiplexer
+HDL          : SystemVerilog
+Simulator    : QuestaSim 10.7c
+
+--------------------------------------------------
+DESIGN DESCRIPTION
+--------------------------------------------------
+
+The 1:4 Demultiplexer routes one data input (Din)
+to one of four outputs based on the 2-bit select
+input (Sel).
+
+Inputs:
+- Din
+- Sel[1:0]
+
+Outputs:
+- Y0
+- Y1
+- Y2
+- Y3
+
+--------------------------------------------------
+VERIFICATION METHODOLOGY
+--------------------------------------------------
+
+- Self-checking SystemVerilog testbench
+- Exhaustive testing of all 8 input combinations
+- Independent reference model
+- Case inequality ( !== ) comparison
+- Automatic PASS/FAIL counting
+
+--------------------------------------------------
+SIMULATION RESULTS
+--------------------------------------------------
+
+TOTAL TESTS        : 8
+TOTAL TESTS PASSED : 8
+TOTAL TESTS FAILED : 0
+
+OVERALL RESULT: ALL TESTS PASSED
+
+--------------------------------------------------
+CONCLUSION
+--------------------------------------------------
+
+The 1:4 Demultiplexer was simulated successfully.
+All input combinations were verified against the
+expected output behavior.
+
+==================================================
