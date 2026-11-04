@@ -1,0 +1,68 @@
+
+==================================================
+       4-BIT RIPPLE BORROW SUBTRACTOR
+             SIMULATION REPORT
+==================================================
+
+Simulator       : QuestaSim-64 10.7c
+HDL             : SystemVerilog
+Design          : four_bit_subtractor
+Testbench       : four_bit_subtractor_tb
+
+--------------------------------------------------
+TEST CASE RESULTS
+--------------------------------------------------
+
+Test 1: Zero - Zero
+A = 0000, B = 0000, Bin = 0
+Expected: Bout = 0, Difference = 0000
+Status  : PASS
+
+Test 2: Basic Subtraction
+A = 1000, B = 0011, Bin = 0
+Expected: Bout = 0, Difference = 0101
+Status  : PASS
+
+Test 3: Equal Operands
+A = 1010, B = 1010, Bin = 0
+Expected: Bout = 0, Difference = 0000
+Status  : PASS
+
+Test 4: Borrow Generation
+A = 0101, B = 1001, Bin = 0
+Expected: Bout = 1, Difference = 1100
+Status  : PASS
+
+Test 5: Subtraction with Borrow Input
+A = 1000, B = 0011, Bin = 1
+Expected: Bout = 0, Difference = 0100
+Status  : PASS
+
+Test 6: Zero Minus One
+A = 0000, B = 0001, Bin = 0
+Expected: Bout = 1, Difference = 1111
+Status  : PASS
+
+Test 7: Maximum Operand Minus Zero
+A = 1111, B = 0000, Bin = 0
+Expected: Bout = 0, Difference = 1111
+Status  : PASS
+
+Test 8: Borrow Propagation
+A = 0000, B = 1111, Bin = 1
+Expected: Bout = 1, Difference = 0000
+Status  : PASS
+
+--------------------------------------------------
+SIMULATION SUMMARY
+--------------------------------------------------
+
+Total Test Cases : 8
+Passed           : 8
+Failed           : 0
+
+Overall Result   : ALL TESTS PASSED
+
+==================================================
+END OF SIMULATION REPORT
+==================================================
