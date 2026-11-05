@@ -1,0 +1,51 @@
+
+==================================================
+             1:16 DEMULTIPLEXER
+              SIMULATION REPORT
+==================================================
+
+Project       : 1:16 Demultiplexer
+HDL           : SystemVerilog
+Simulator     : QuestaSim 10.7c
+RTL           : demux_1to16.sv
+Testbench     : demux_1to16_tb.sv
+
+--------------------------------------------------
+DESIGN DESCRIPTION
+--------------------------------------------------
+
+A 1:16 Demultiplexer routes a single data input
+to one of sixteen outputs using four select lines.
+
+Input   : Din
+Select  : Sel[3:0]
+Outputs : Y[15:0]
+
+--------------------------------------------------
+VERIFICATION DETAILS
+--------------------------------------------------
+
+Exhaustive verification was performed.
+
+Din = 0 : All 16 select combinations tested.
+Din = 1 : All 16 select combinations tested.
+
+Total input combinations : 32
+
+Additional checks:
+1. Functional output comparison.
+2. One-hot output validation using $countones().
+
+--------------------------------------------------
+TEST SUMMARY
+--------------------------------------------------
+
+Total Tests : 32
+PASS        : 32
+FAIL        : 0
+
+RESULT      : ALL TESTS PASSED
+
+Simulation Time : 320 ns
+
+==================================================
