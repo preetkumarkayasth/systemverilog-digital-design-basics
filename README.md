@@ -252,7 +252,7 @@ Electronics and Communication Engineering Student
 
 GitHub: [@preetkumarkayasth](https://github.com/preetkumarkayasth)
 
-LinkedIn: [Preetkumar Kayasth](https://www.linkedin.com/)
+LinkedIn: [Preetkumar Kayasth](https://www.linkedin.com/in/preetkumar-kayasth-7ba328322/)
 
 ---
 
