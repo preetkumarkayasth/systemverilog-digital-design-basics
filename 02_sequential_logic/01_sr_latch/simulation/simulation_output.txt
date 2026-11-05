@@ -1,0 +1,23 @@
+PROJECT: SR LATCH USING NOR GATES
+SIMULATOR: QuestaSim 10.7c
+
+DESIGN:
+Active-HIGH SR latch implemented using SystemVerilog.
+The design supports Set, Reset, Hold and Invalid conditions.
+
+TEST CASES:
+1. Set
+2. Hold after Set
+3. Reset
+4. Hold after Reset
+5. Invalid Condition
+6. Recovery Reset
+7. Recovery Set
+
+TOTAL TESTS: 7
+PASSED: 7
+FAILED: 0
+
+RESULT: ALL TESTS PASSED
+
+SIMULATION STATUS: SUCCESSFUL
