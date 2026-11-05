@@ -1,0 +1,55 @@
+
+==================================================
+             16:1 MULTIPLEXER
+              SIMULATION REPORT
+==================================================
+
+Project       : 16:1 Multiplexer
+HDL           : SystemVerilog
+Simulator     : QuestaSim 10.7c
+RTL           : mux_16to1.sv
+Testbench     : mux_16to1_tb.sv
+
+--------------------------------------------------
+DESIGN DESCRIPTION
+--------------------------------------------------
+
+A 16:1 multiplexer selects one of sixteen data
+inputs using four select lines and forwards the
+selected input to a single output.
+
+Inputs  : D[15:0]
+Select  : Sel[3:0]
+Output  : Y
+
+--------------------------------------------------
+VERIFICATION DETAILS
+--------------------------------------------------
+
+Input patterns tested:
+1. All zeros
+2. All ones
+3. Alternating 1010 pattern
+4. Alternating 0101 pattern
+5. Walking one
+6. Walking zero
+
+Each input pattern was tested across all 16
+select combinations.
+
+Total input patterns : 36
+Select combinations : 16
+
+--------------------------------------------------
+TEST SUMMARY
+--------------------------------------------------
+
+Total Tests : 576
+PASS        : 576
+FAIL        : 0
+
+RESULT      : ALL TESTS PASSED
+
+Simulation Time : 5760 ns
+
+==================================================
