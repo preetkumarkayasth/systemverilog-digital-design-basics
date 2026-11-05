@@ -1,0 +1,26 @@
+PROJECT: GATED SR LATCH
+SIMULATOR: QuestaSim 10.7c
+
+DESIGN:
+Level-sensitive Gated SR Latch implemented using SystemVerilog.
+The Enable input controls Set and Reset operations.
+
+TEST CASES:
+1. Set
+2. Disabled Hold
+3. Disabled Set
+4. Disabled Reset
+5. Enabled Hold
+6. Reset
+7. Disabled Set After Reset
+8. Invalid Condition
+9. Recovery Reset
+10. Final Set
+
+TOTAL TESTS: 10
+PASSED: 10
+FAILED: 0
+
+RESULT: ALL TESTS PASSED
+
+SIMULATION STATUS: SUCCESSFUL
