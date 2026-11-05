@@ -1,0 +1,132 @@
+# D Latch (Data Latch) – SystemVerilog
+
+## Overview
+
+This project implements a level-sensitive D (Data) Latch using SystemVerilog.
+
+A D Latch is a fundamental sequential logic circuit used to store one bit of information. It has a Data input (D) and an Enable input (EN), which controls whether the output follows the input or retains its previous state.
+
+The design is functionally verified using a self-checking SystemVerilog testbench in QuestaSim 10.7c.
+
+## Design Specifications
+
+| Signal | Direction | Width | Description |
+|---|---|---:|---|
+| `D` | Input | 1 bit | Data input |
+| `EN` | Input | 1 bit | Enable control |
+| `Q` | Output | 1 bit | Stored data |
+| `Q_bar` | Output | 1 bit | Complementary output |
+
+## Truth Table
+
+| EN | D | Q (Next State) | Q_bar (Next State) | Operation |
+|---:|---:|---:|---:|---|
+| 0 | 0 | Previous Q | Previous Q_bar | Hold |
+| 0 | 1 | Previous Q | Previous Q_bar | Hold |
+| 1 | 0 | 0 | 1 | Store 0 |
+| 1 | 1 | 1 | 0 | Store 1 |
+
+## Characteristic Equation
+
+The characteristic equation of the D Latch is:
+
+\[
+Q_{next} = EN \cdot D + \overline{EN} \cdot Q
+\]
+
+Where:
+
+- `EN = 1`: Output follows the Data input.
+- `EN = 0`: Previous output state is retained.
+
+## Working Principle
+
+### 1. Transparent Mode
+
+When `EN = 1`, the latch is transparent.
+
+- If `D = 0`, then `Q = 0`.
+- If `D = 1`, then `Q = 1`.
+
+Changes in D are reflected at Q while Enable remains HIGH.
+
+### 2. Hold Mode
+
+When `EN = 0`, the latch retains its previously stored value irrespective of changes in D.
+
+### 3. Complementary Output
+
+`Q_bar` represents the inverse of Q after a valid state has been established.
+
+## Project Structure
+
+```text
+03_d_latch/
+├── rtl/
+│   └── d_latch.sv
+├── testbench/
+│   └── d_latch_tb.sv
+├── simulation/
+│   ├── waveform.png
+│   └── simulation_output.txt
+└── README.md
+```
+
+## Verification Methodology
+
+A self-checking SystemVerilog testbench verifies 12 directed scenarios covering:
+
+- Storing logic 0 and logic 1.
+- Transparent operation.
+- Hold operation.
+- Data changes while Enable is LOW.
+- Transitions between enabled and disabled modes.
+- Complementary output behavior.
+
+The testbench compares DUT outputs against expected values using case inequality (`!==`).
+
+## Simulation Results
+
+| Metric | Result |
+|---|---:|
+| Total test cases | 12 |
+| Passed | 12 |
+| Failed | 0 |
+| Simulation status | PASS |
+
+### Simulation Summary
+
+```text
+Total Tests : 12
+PASS        : 12
+FAIL        : 0
+RESULT      : ALL TESTS PASSED
+```
+
+## Simulation Waveform
+
+![D Latch Simulation Waveform](simulation/waveform.png)
+
+## Tools Used
+
+- **HDL:** SystemVerilog
+- **Simulator:** QuestaSim 10.7c
+- **Editor:** Notepad
+- **Verification:** Self-checking testbench
+
+## Key Concepts Learned
+
+- Sequential logic design
+- Level-sensitive latch operation
+- D latch functionality
+- Transparent and Hold modes
+- Enable-controlled data storage
+- Characteristic equations
+- SystemVerilog `always_latch`
+- Functional verification
+
+## Author
+
+**Preetkumar Kayasth**
+
+GitHub: [preetkumarkayasth](https://github.com/preetkumarkayasth)

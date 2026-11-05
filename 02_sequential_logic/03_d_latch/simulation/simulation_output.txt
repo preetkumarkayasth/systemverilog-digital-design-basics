@@ -1,0 +1,28 @@
+PROJECT: D LATCH (DATA LATCH)
+SIMULATOR: QuestaSim 10.7c
+
+DESIGN:
+Level-sensitive D Latch implemented using SystemVerilog.
+The Enable input controls transparent and hold operations.
+
+TEST CASES:
+1. Store Zero
+2. Store One
+3. Hold After One
+4. Data Change While Disabled
+5. Store Zero Again
+6. Hold After Zero
+7. Store One Again
+8. Store Zero
+9. Store One
+10. Hold One
+11. Store Zero
+12. Hold Zero
+
+TOTAL TESTS: 12
+PASSED: 12
+FAILED: 0
+
+RESULT: ALL TESTS PASSED
+
+SIMULATION STATUS: SUCCESSFUL
