@@ -1,0 +1,17 @@
+PROJECT: 8-BIT PARITY GENERATOR AND CHECKER
+SIMULATOR: QuestaSim 10.7c
+
+DESIGN:
+8-bit even and odd parity generation and checking.
+
+TEST COVERAGE:
+All 256 possible 8-bit input combinations.
+Both possible received parity values for each input.
+
+TOTAL TEST CASES: 512
+PASSED: 512
+FAILED: 0
+
+RESULT: ALL TESTS PASSED
+
+SIMULATION STATUS: SUCCESSFUL
