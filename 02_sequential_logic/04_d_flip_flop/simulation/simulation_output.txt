@@ -1,0 +1,32 @@
+========================================
+        D FLIP-FLOP SIMULATION REPORT
+========================================
+
+Simulator       : QuestaSim 10.7c
+Design          : Positive Edge Triggered D Flip-Flop
+Reset           : Active-High Asynchronous Reset
+Clock Period    : 10 ns
+Simulation Time : 47 ns
+
+----------------------------------------
+TEST SUMMARY
+----------------------------------------
+
+1. Asynchronous Reset             : PASS
+2. Capture Data 1                 : PASS
+3. Hold When D Changes            : PASS
+4. Capture Data 0                 : PASS
+5. Retain Previous Data           : PASS
+6. Capture Data 1 Again           : PASS
+7. Reset Without Clock Edge       : PASS
+8. Hold After Reset Release       : PASS
+9. Capture After Reset            : PASS
+10. Complementary Output Check    : PASS
+
+----------------------------------------
+Total Tests : 10
+PASS        : 10
+FAIL        : 0
+
+RESULT: ALL TESTS PASSED
+========================================
