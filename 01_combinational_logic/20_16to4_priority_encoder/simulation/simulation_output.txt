@@ -1,0 +1,53 @@
+
+==================================================
+           16:4 PRIORITY ENCODER
+              SIMULATION REPORT
+==================================================
+
+Project       : 16:4 Priority Encoder
+HDL           : SystemVerilog
+Simulator     : QuestaSim 10.7c
+RTL           : priority_encoder_16to4.sv
+Testbench     : priority_encoder_16to4_tb.sv
+
+--------------------------------------------------
+DESIGN DESCRIPTION
+--------------------------------------------------
+
+A 16:4 Priority Encoder converts sixteen input
+lines into a four-bit binary output.
+
+When multiple inputs are HIGH, the highest-indexed
+input receives priority.
+
+Output Signals:
+Y     : 4-bit encoded output
+Valid : Indicates at least one active input
+
+--------------------------------------------------
+VERIFICATION DETAILS
+--------------------------------------------------
+
+Test categories:
+1. All-zero input condition
+2. All 16 individual input lines
+3. All inputs HIGH
+4. Alternating input patterns
+5. Multiple simultaneous HIGH inputs
+6. Walking-zero patterns
+
+Total Test Cases : 43
+
+--------------------------------------------------
+TEST SUMMARY
+--------------------------------------------------
+
+Total Tests : 43
+PASS        : 43
+FAIL        : 0
+
+RESULT      : ALL TESTS PASSED
+
+Simulation Time : 430 ns
+
+==================================================
